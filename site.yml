@@ -1,0 +1,9 @@
+---
+- name: deploy common 
+  hosts: group1
+  remote_user: ec2-user
+  become: yes
+
+
+  roles:
+  - php
