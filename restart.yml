@@ -12,6 +12,6 @@
     ignore_errors: True
 
   - name: waiting for server to comeback
-    wait_for: host={{inventory_hostname}} state=started delay=30 timeout=300
+    wait_for: host={{inventory_hostname}} state=started delay=30 timeout=30
     become: no
     delegate_to: 127.0.0.1
